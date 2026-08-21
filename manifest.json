@@ -1,0 +1,14 @@
+{
+  "name": "Matrix Departures Board",
+  "version": "B1.0-W1.0",
+  "funding_url": "https://buymeacoffee.com/gadec.uk",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32S3",
+      "parts": [
+        { "path": "firmware/merged-firmware.bin", "offset": 0 }
+      ]
+    }
+  ]
+}

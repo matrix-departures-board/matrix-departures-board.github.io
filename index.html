@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matrix Departures Board Web Installer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Questrial, sans-serif;
+            background-color: white;
+            color: black;
+            min-height: 100vh;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .layout {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            min-width: 300px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin: 4px 0 35px;
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            color: #666;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 1.5rem;
+        }
+
+        .footer {
+            padding: 0rem 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .install-supported-msg {display:none;}
+
+        esp-web-install-button[install-supported] + .install-supported-msg {display: revert;}
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="container">
+            <img src="img/dblogo.svg" style="max-width: 450px; margin-top: 5%;" alt="Departures Board" />
+            <div class="subtitle">ONLINE WEB INSTALLER</div>
+            <img src="img/departuresboard.jpg" style="max-width: 300px; margin-bottom: 10px;" alt="Departures Board Device">
+            <p></p>
+            <esp-web-install-button manifest="./manifest.json">
+                <span slot="unsupported" style="line-height: 1.5rem;"><b>Your browser does not support installing the Matrix Departures Board firmware.</b><br>Please use Google Chrome or Microsoft Edge.</span>
+            </esp-web-install-button>
+            <p class="install-supported-msg">Attach your Departures Board to a USB port and click <b>Connect</b>.</p>
+            <div style="margin-top:20px;">
+                <p>Source code and build instructions can be found <a href="https://github.com/gadec-uk/matrix-departures-board" target="_blank">here</a>. This software is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0</a>.<br>No commercial use allowed (including reselling in kit or assembled form).</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/gadeclogo.svg" style="max-width:80px" alt="Gadec"/>
+        <div>&copy; 2026 Gadec Software.</div>
+    </div>
+</body>
+</html>
