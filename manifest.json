@@ -1,13 +1,13 @@
 {
   "name": "Matrix Departures Board",
-  "version": "B1.5-W1.2",
+  "version": "B1.7-W1.2",
   "funding_url": "https://buymeacoffee.com/gadec.uk",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/matrix-departures-board/releases/download/B1.5-W1.2/merged-firmware.bin", "offset": 0 }
+        { "path": "https://github.gadec.co.uk?url=https://github.com/gadec-uk/matrix-departures-board/releases/download/B1.7-W1.2/merged-firmware.bin", "offset": 0 }
       ]
     }
   ]
